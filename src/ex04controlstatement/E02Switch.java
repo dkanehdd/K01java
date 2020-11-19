@@ -40,7 +40,7 @@ public class E02Switch {
 		case 0:
 			System.out.println("나머지는 0입니다.");
 			break; //switch문에서 break를 만나면 해당 블록을 탈출하게된다.
-		case 1:
+		case 1: case 3:
 			System.out.println("나머지는 1입니다.");
 			break;
 		default:

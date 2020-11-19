@@ -7,7 +7,7 @@ public class R01if {
 	public static void main(String[] args) {
 		
 		int jumsu = 85;
-		if(jumsu>=90) {
+		if(jumsu!=90) {
 			System.out.println("A학점");
 		}
 		else if(jumsu>=80) {
