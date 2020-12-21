@@ -1,11 +1,12 @@
 package ex21jdbc.connect;
 
-import java.beans.Statement;
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Scanner;
 
 public class IConnectImpl implements IConnect {
@@ -14,12 +15,15 @@ public class IConnectImpl implements IConnect {
 	public PreparedStatement psmt; 
 	public Connection con;
 	public ResultSet rs;
+	//오라클의 함수/프로시져를 실행하기 위한 객체
+	public CallableStatement csmt;
+	public Statement stmt;
 	
 	public IConnectImpl() {
 		System.out.println("IConnectImpl 기본생성자 호출");
 	}
 	public IConnectImpl(String user, String pass) {
-		System.out.println("IConnectImpl 인자생성자 호출");
+//		System.out.println("IConnectImpl 인자생성자 호출");
 		try {
 			Class.forName(ORACLE_DRIVER);
 			//DB연결

@@ -74,7 +74,7 @@ public class Covid19Random extends Thread{
 	}
 	
 
-	public static String maxFind(int[] choice, String[] kosmo) {
+	public static void maxFind(int[] choice, String[] kosmo) {
 		
 		int max=0;
 		int maxIndex=-1;
@@ -88,7 +88,6 @@ public class Covid19Random extends Thread{
 		//최대값을 찾은후 이름을 출력하고 0으로 리셋한다.
 		System.out.println("당첨:"+ kosmo[maxIndex]);
 		choice[maxIndex] = 0;
-		return kosmo[maxIndex];
 	}
 }
 //71기
