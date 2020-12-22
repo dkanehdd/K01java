@@ -23,9 +23,9 @@ public class UpdateShop extends IConnectImpl{
 			
 			int affected = csmt.getInt(5);
 			if(affected==0)
-				System.out.println("오류발생:입력실패");
+				System.out.println("해당 상품이 없습니다.");
 			else 
-				System.out.println(affected + "행 입력성공");
+				System.out.println(affected + "행 수정완료");
 		}
 		catch (SQLException e) {
 			e.printStackTrace();

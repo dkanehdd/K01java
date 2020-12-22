@@ -15,11 +15,6 @@ public class ShopMain {
 	}
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		InsertShop insert = new InsertShop();
-		SelectShop select = new SelectShop();
-		SelectAllShop selectAll = new SelectAllShop();
-		DeleteShop delete = new DeleteShop();
-		UpdateShop update = new UpdateShop();
 		while(true) {
 			menuSelect();
 			System.out.print("선택:");
@@ -31,15 +26,15 @@ public class ShopMain {
 			}
 			switch(choice) {
 			case 1:
-				insert.execute();break;
+				new InsertShop().execute();break;
 			case 2:
-				select.execute();break;
+				new SelectShop().execute();break;
 			case 3:
-				delete.execute();break;
+				new DeleteShop().execute();break;
 			case 4:
-				selectAll.execute();break;
+				new SelectAllShop().execute();break;
 			case 5:
-				update.execute();break;
+				new UpdateShop().execute();break;
 			}
 		}
 	}
