@@ -24,26 +24,18 @@ class iThread extends Thread{
 public class Covid19Random extends Thread{
 
 	static final int RANDOM_COUNT = 100000000;//난수생성횟수
-	static final int STUDENT_COUNT = 9;//당첨명수
+	static final int STUDENT_COUNT = 3;//당첨명수
 	
 	public static void main(String[] args) {		
 		
 		
 		String[] kosmo = {
-				"김지현",
-				"김민지",
-				"이학준",
-				"홍진혁",
-				"이강민",
 				"허주희",
-				"손현승",
-				"남민우",
 				"최용식",
-				"송치영",
+				"남민우",
 				"유내길",
-				"강현우",
-				"남아영",
-				"김지훈"
+				"허서윤",
+				"김민지"
 		};
 		//난수를 누적해서 저장할 배열
 		int[] choice = new int[kosmo.length];
